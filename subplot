@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+a=[1,2,3,4,5]
+b=[10,20,30,40,50]
+c=[5,10,15,20,25]
+
+plt.subplot(2,1,1)
+plt.plot(a,c, label='first line', color='orange',linestyle='dashed',linewidth=1.5, markersize=2, markeredgecolor='red')
+
+plt.subplot(2,1,2)
+plt.plot(a,b, label='second line', color='cyan',linestyle='dashdot',linewidth=1.5, markersize=2, markeredgecolor='blue')
+plt.xlabel('line')
+plt.ylabel('random')
+plt.title('Yay')
+plt.subplots_adjust(hspace=0.4,wspace=0.4)
+plt.xlabel('line')
+plt.ylabel('random')
+plt.title('Yay')
+plt.legend(loc=1)
+plt.grid(True)
+plt.show()

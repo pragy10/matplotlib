@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+g=[96,85,45,56,98]
+b=[83,64,75,66,84]
+x=[1,2,3,4,5]
+plt.plot(x,b, label='boys',color='cyan',linewidth=1.5,linestyle='dashdot',marker='>',markeredgecolor='blue',markersize=1.0)
+plt.plot(x,g, label='girls', color='pink',linewidth=1.5,linestyle='dashdot',marker='<',markeredgecolor='purple',markersize=1.0)
+plt.xlabel('students')
+plt.ylabel('marks')
+plt.title('result analysis')
+plt.grid(True)
+plt.legend(loc=4)
+plt.show()

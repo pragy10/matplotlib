@@ -1,0 +1,9 @@
+import matplotlib.pyplot as pyplot
+import numpy as np
+marks =[24, 47, 97, 100, 88, 67, 20, 2, 5, 6, 53, 46, 58, 94, 34, 27, 30, 10, 73, 41, 80, 9, 14, 60, 22]
+bins = [10,20,30,40,50,60,70,80,90,100]
+plt.hist(marks,bins, color='red',align='mid',edgecolor='black')
+plt.xlabel('Marks')
+plt.ylabel('random y axis')
+plt.title('marks')
+plt.show()

@@ -1,0 +1,14 @@
+student=['A','B','C']
+math=[96,85,75]
+science=[78,63,95]
+english=[74,98,85]
+index=np.arange(len(student))
+plt.bar(index,math, label='maths',color='yellow',width=0.2,align='center')
+plt.bar(index+0.2,science, label='science',color='blue',width=0.2,align='center')
+plt.bar(index+0.4,english, label='english',color='red',width=0.2,align='center')
+plt.xlabel('students')
+plt.ylabel('marks')
+plt.xticks(index,student)
+plt.title('result analysis')
+plt.legend(loc=1)
+plt.show()

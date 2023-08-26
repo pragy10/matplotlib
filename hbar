@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+lang=['Java','Python','C++','C','Ruby']
+index=np.arange(len(lang))
+dept1=[20,50,15,25,40]
+dept2=[30,15,10,60,55]
+plt.barh(index,dept1, label='Dept_1',color='red',height=0.3,align='center')
+plt.barh(index+0.3,dept2, label='Dept_2',color='lime',height=0.3,align='center')
+plt.yticks(index,lang)
+plt.xlabel('Staff')
+plt.ylabel('Languages')
+plt.legend(loc=4)
+plt.show()

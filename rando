@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+DF=pd.DataFrame({'2019':[10,20,15,30],'2020':[16,25,22,30],'2021':[19,22,29,32]},index=['a','b','c','d'])
+DF.plot(kind='hist')
+plt.title('rando')
+plt.xlabel('rando')
+plt.ylabel('rando')
+plt.show()

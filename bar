@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+student=['a','b','c','d','e']
+percent1 = [94,85,45,55,50]
+percent2 = [62,74,88,95,77]
+index = np.arange(len(student))
+plt.bar(index, percent1,label='per1',width=0.2,linewidth=0.25,edgecolor='orange',color='yellow',align='center',linestyle='-.')
+plt.bar(index+0.2, percent2,label='per2',width=0.2)
+plt.xlabel('Student Name', fontsize=15)
+plt.ylabel('Percentage', fontsize=15)
+plt.xticks(index,student)
+
+plt.title('Percentage of Marks achieved by student Class XII')
+plt.legend()
+plt.show()

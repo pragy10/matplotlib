@@ -1,0 +1,7 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+y=np.random.randn(10000)
+plt.hist(y,color='black',edgecolor='yellow')
+plt.show()

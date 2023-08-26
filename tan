@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+                                                                
+x=np.arange(-2,6,0.1)
+y=np.tan(x)
+plt.plot(x,y)
+plt.grid(True)
+plt.show()

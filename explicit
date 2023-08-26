@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import numpy as np
+                                                                #explicit coding
+y=np.arange(1,11,1)
+plt.plot(y, 'y-.')
+plt.plot(y+1, 'g--')
+plt.plot(2*y + 1, 'r.')
+plt.plot(y**1.25, 'm-')
+plt.show()

@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.arange(-100,100)
+y=x**3
+
+plt.plot(x,y,color='brown',linewidth=2)
+plt.xlabel('multiplier')
+plt.ylabel('number')
+plt.title('table')
+plt.legend(loc=4)
+plt.grid(True)
+plt.show()
+plt.savefig('pic1.png')
